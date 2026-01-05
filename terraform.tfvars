@@ -12,14 +12,14 @@ fabric_capacities = {
   "new-capacity" = {
     name                   = "newcapacity"
     location               = "westeurope"
-    administration_members = ["admin@example.com"]
+    administration_members = ["alz@MngEnvMCAP385772.onmicrosoft.com"]
     sku_name               = "F128"
     sku_tier               = "Fabric"
   }
   "new-capacity1" = {
     name                   = "newcapacity1"
     location               = "westeurope"
-    administration_members = ["admin@example.com"]
+    administration_members = ["fabricadmin@MngEnvMCAP385772.onmicrosoft.com"]
     sku_name               = "F2"
     sku_tier               = "Fabric"
   }
