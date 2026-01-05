@@ -23,7 +23,7 @@ resource "azurerm_fabric_capacity" "capacities" {
   resource_group_name    = azurerm_resource_group.example.name
   administration_members = each.value.administration_members
 
-  tags = var.common_tags
+  tags = merge( each.value.tags,var.common_tags)
 
   sku {
     name = each.value.sku_name
