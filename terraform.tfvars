@@ -1,7 +1,7 @@
 # Example - Add a new capacity:
 fabric_capacities = {
-  "p1controltower5" = {
-    name                   = "p1controltower5"
+  "new-capacity1" = {
+    name                   = "new-capacity1"
     location               = "australiasoutheast"
     administration_members = ["alz@contoso.com"]
     sku_name               = "F64"
@@ -10,15 +10,15 @@ fabric_capacities = {
       Owner = "fabric_team"
     }
   }
-  "new-capacity" = {
-    name                   = "newcapacity"
+  "new-capacity2" = {
+    name                   = "new-capacity2"
     location               = "westeurope"
     administration_members = ["alz@contoso.com"]
     sku_name               = "F128"
     sku_tier               = "Fabric"
   }
-  "new-capacity1" = {
-    name                   = "newcapacity1"
+  "new-capacity3" = {
+    name                   = "new-capacity3"
     location               = "westeurope"
     administration_members = ["fabricadmin@contoso.com", "alz@contoso.com"]
     sku_name               = "F2"
