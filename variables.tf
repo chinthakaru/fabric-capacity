@@ -3,33 +3,12 @@ variable "fabric_capacities" {
   type = map(object({
     name                   = string
     location               = string
-    administration_members = list(string)
+    administration_members = optional(list(string), [])
     sku_name               = string
     sku_tier               = string
+    tags                   = optional(map(string), {})
   }))
-  default = {
-    "p1controltower5" = {
-      name                   = "p1controltower5"
-      location               = "australiasoutheast"
-      administration_members = ["alz@contoso.onmicrosoft.com"]
-      sku_name               = "F64"
-      sku_tier               = "Fabric"
-    }
-    "p1controltower1" = {
-      name                   = "p1controltower1"
-      location               = "austriaeast"
-      administration_members = ["admin@contoso.onmicrosoft.com"]
-      sku_name               = "F128"
-      sku_tier               = "Fabric"
-    }
-    "p1controltower4" = {
-      name                   = "p1controltower4"
-      location               = "austriaeast"
-      administration_members = ["fabricadmin@contoso.onmicrosoft.com"]
-      sku_name               = "F2"
-      sku_tier               = "Fabric"
-    }
-  }
+  default = {}
 }
 
 
