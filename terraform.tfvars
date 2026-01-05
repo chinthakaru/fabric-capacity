@@ -8,7 +8,6 @@ fabric_capacities = {
     administration_members = ["alz@MngEnvMCAP385772.onmicrosoft.com"]
     sku_name               = "F64"
     sku_tier               = "Fabric"
-    sku_tier               = "Fabric"
   }
   "new-capacity" = {
     name                   = "newcapacity"
